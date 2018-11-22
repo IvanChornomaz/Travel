@@ -3,4 +3,10 @@
     img(src='../img/logo.png')
   .home__logo-text
     |tajam  
+  
+  -var menu = ['HOME','ABOUT','EXPERTISE','TEAMS','WORKS','PEOPLE SAY','CONTACT'];
   .home__menu
+    ul
+      each item,index in menu
+        li(class=index==0?'is-active': '')
+          a(href='#')=item
