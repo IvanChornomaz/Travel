@@ -1,7 +1,8 @@
 .header{
   background-image: linear-gradient(#2f2b50c7), url('../img/backg.png');
+  background-attachment: fixed;
 }
-.logo{
+.header-logo{
   text-align: center;
   border-bottom: 1px solid #23c4ce7a;
   margin-bottom: 15px;
@@ -9,7 +10,7 @@
     opacity: 0.5;
   }
   &__text{
-    color: #23c4ce;
+    color: #00ffed;
     opacity: 0.5;
     font-size: 25px;
     font-stretch: ultra-condensed;
@@ -17,16 +18,22 @@
     margin-bottom: 15px;
   }
 }
-.home__menu ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-.home__menu ul li {
-  float: left;
-}
-.home__menu ul li a {
+
+.header__menu{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 180px;
+  border-bottom: 1px solid #23c4ce7a;
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+  ul li {
+    float: left;
+  }
+  ul li a {
     display: block;
     color: white;
     text-align: center;
@@ -34,18 +41,60 @@
     text-decoration: none;
     font-size: 12px;
     font-weight: bold;
-}
-.home__menu ul li a:hover:not(.active) {
-  color: #111;
-}
-.home__menu ul li a.active {
-  background-color: #4CAF50;
-}
-.home__menu ul li{
-  float: right;
+  }
+  ul li a:hover:not(.active) {
+    color: #111;
+  }
+  ul li a.active {
+    background-color: #4CAF50;
+  }
+  ul li{
+    float: right;
+  }
 }
 @media screen and (max-width: 600px){ 
-  .home__menu ul li {
+  .header__menu ul li {
     float: none;
+  }
+}
+.header__title{
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+hr { 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  border: none;
+  background: #00ffed;
+  width: 100px;
+  height: 1px;
+}
+.header__text{
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  margin-bottom: 50px;
+}
+.header__button{
+  text-align: center;
+  button{
+    padding: 10px 20px;
+    border: 1px solid #00ffed;
+    border-radius: 3px;
+    background: none;
+    margin-bottom: 120px;
+    color: #00ffed;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 1px 1px #000000;
+  }
+  button:hover{
+    background: #000;
+    opacity: 0.4;
+    color: #fff;
+    transition: 1s;
   }
 }
