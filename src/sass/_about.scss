@@ -1,0 +1,41 @@
+.about{
+  text-align: center;
+  &__img img{
+    width: 80%;
+    margin-bottom: 15px;
+  }
+  &__title{
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  &__text{
+    font-size: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+}
+.about__button{
+  text-align: center;
+  button{
+    padding: 10px 20px;
+    border: 1px solid #00ffed;
+    border-radius: 3px;
+    background: none;
+    margin-bottom: 120px;
+    color: #000;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 1px 1px #000000;
+  }
+  button:hover{
+    background: #000;
+    opacity: 0.4;
+    color: #fff;
+    transition: 1s;
+  }
+}
+.about__video video{
+  background-image: linear-gradient(#2f2b50c7), url('../img/backgTv.png');
+  width: 100%;
+  height: 240px;
+  margin-bottom: 70px;
+}
