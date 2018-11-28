@@ -201,6 +201,51 @@ hr {
   height: 240px;
   margin-bottom: 70px; }
 
+.article {
+  text-align: center; }
+  .article__title {
+    font-size: 20px;
+    margin-bottom: 15px; }
+  .article__text {
+    font-size: 15px;
+    padding: 15px;
+    margin-bottom: 15px; }
+
+.sprite {
+  background-image: url(spritesheet.png);
+  background-repeat: no-repeat;
+  display: block; }
+
+.sprite-game-icon {
+  width: 41px;
+  height: 50px;
+  background-position: -5px -5px; }
+
+.sprite-heart-icon {
+  width: 50px;
+  height: 46px;
+  background-position: -56px -5px; }
+
+.sprite-opt-icon {
+  width: 50px;
+  height: 50px;
+  background-position: -56px -61px; }
+
+.sprite-pen-icon {
+  width: 50px;
+  height: 42px;
+  background-position: -116px -5px; }
+
+.sprite-phone-icon {
+  width: 28px;
+  height: 50px;
+  background-position: -116px -57px; }
+
+.sprite-tv-icon {
+  width: 49px;
+  height: 50px;
+  background-position: -116px -117px; }
+
 * {
   margin: 0;
   padding: 0;
