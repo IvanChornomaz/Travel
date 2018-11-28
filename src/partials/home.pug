@@ -1,0 +1,22 @@
+.header  
+  .header-logo
+    .header-logo__img
+      img(src='../img/logo.png')
+    .header-logo__text
+      |tajam  
+    
+  -var menu = ['CONTACT','PEOPLE SAY','WORKS','TEAMS','EXPERTISE','ABOUT','HOME'];
+  .header__menu
+    ul
+      each item,index in menu
+        li(class=index==0?'is-active': '')
+          a(href='#')=item
+
+  .header__title
+    |We Are Awesome Creative Agency
+  hr
+  .header__text
+    |This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+  .header__button
+    button
+      |Learn More
